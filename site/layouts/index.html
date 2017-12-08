@@ -3,4 +3,7 @@
   <h1>Site!</h1>
   <p>Consectetur nesciunt dignissimos quasi qui optio. Atque debitis possimus minima omnis quam repellendus modi consequuntur, nisi. Explicabo debitis amet dolorem provident consequatur. Hic dignissimos atque saepe voluptatum earum nihil, quae. Dolor exercitationem id magni eligendi eum atque Mollitia enim lorem eveniet fuga quos ratione Sunt laboriosam consequatur dignissimos veniam non Quod nemo tenetur ducimus quo temporibus? Cumque inventore voluptatibus quibusdam?</p>
 </div>
+{{ range 'posts' }}
+  <h5>{{ .title }}</h5>
+{{ end }}
 {{ end }}
