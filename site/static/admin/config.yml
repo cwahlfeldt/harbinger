@@ -7,9 +7,9 @@ public_folder: "uploads"
 collections:
   - label: "Posts"
     name: "posts"
-    folder: "_posts"
+    folder: "site/content/posts"
     create: true
-    filter: {field: "language", value: "en"}
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Color", name: "color", widget: "color"}
