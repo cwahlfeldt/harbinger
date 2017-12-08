@@ -8,3 +8,5 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+console.log('wtf');
