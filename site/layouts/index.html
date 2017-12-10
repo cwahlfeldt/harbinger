@@ -1,9 +1,8 @@
 {{ define "content" }}
-<div class="container mw7 center">
-  <h1>Site!</h1>
-  <p>Consectetur nesciunt dignissimos quasi qui optio. Atque debitis possimus minima omnis quam repellendus modi consequuntur, nisi. Explicabo debitis amet dolorem provident consequatur. Hic dignissimos atque saepe voluptatum earum nihil, quae. Dolor exercitationem id magni eligendi eum atque Mollitia enim lorem eveniet fuga quos ratione Sunt laboriosam consequatur dignissimos veniam non Quod nemo tenetur ducimus quo temporibus? Cumque inventore voluptatibus quibusdam?</p>
-</div>
-{{ range 'posts' }}
-  <h5>{{ .title }}</h5>
-{{ end }}
+  {{ partial "blog" . }}
+  <!--<div class="container mw7 center">
+    {{ range where .Data.Pages "Type" "posts" }}
+      <h5>{{ .Title }}</h5>
+    {{ end }}
+  </div>-->
 {{ end }}

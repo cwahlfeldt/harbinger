@@ -1,8 +1,22 @@
+body {
+
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FF070B, #E5008D, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FF070B, #E5008D, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .content {
-  padding-top: 100px;
   font-family: 'PT Sans', sans-serif;
+  z-index: 1000;
+}
+
+.top-nav {
+  z-index: 9999;
 }
 
 .top-nav a {
-  font-family: 'UnifrakturCook', cursive;
+  font-family: "sabbath-black",serif;
+  font-weight: 600;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
 }
