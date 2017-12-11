@@ -18,10 +18,16 @@ $(document).on('scroll', function() {
       marginTop: -13,
       marginRight: 'auto',
     });
+    $('.hamburger').css({
+      top: -9,
+    });
   } else {
     $('.top-nav nav').css({
       fontSize: '2.5rem',
       marginTop: 0,
+    });
+    $('.hamburger').css({
+      top: 8,
     });
   }
 });

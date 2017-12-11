@@ -55,3 +55,25 @@ body {
   transition: 0.15s;
   background-color: white;
 }
+
+.hamburger {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  top: 8px;
+  transition: 0;
+}
+
+.hamburger-box {
+  width: 51px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  background: white;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  width: 33px;
+}
