@@ -9,4 +9,19 @@ if (window.netlifyIdentity) {
   });
 }
 
-console.log('wtf');
+$(document).on('scroll', function() {
+  let documentScrollTop = $(this).scrollTop();
+
+  if (documentScrollTop > 10) {
+    $('.top-nav nav').css({
+      fontSize: '1.4rem',
+      marginTop: -13,
+      marginRight: 'auto',
+    });
+  } else {
+    $('.top-nav nav').css({
+      fontSize: '2.5rem',
+      marginTop: 0,
+    });
+  }
+});

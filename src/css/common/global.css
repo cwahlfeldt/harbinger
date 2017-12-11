@@ -1,22 +1,57 @@
+:root {
+  --fixed-top-border-width: 78px;
+  --fixed-border-width: 30px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fixed-border-width: 15px;
+  }
+}
+
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: white;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding-bottom: var(--fixed-border-width);  
+}
+
+body:before {
+  top: 0;
+}
+
+body:after {
+  bottom: 0;
+}
+
 body {
-
-background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #FF070B, #E5008D, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FF070B, #E5008D, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  border-left: var(--fixed-border-width) solid white;
+  border-right: var(--fixed-border-width) solid white;  
+  background: #fff;  /* fallback for old browsers */
 }
 
 .content {
   font-family: 'PT Sans', sans-serif;
   z-index: 1000;
+  padding-top: var(--fixed-top-border-width);
+  padding-bottom: var(--fixed-border-width);
 }
 
 .top-nav {
   z-index: 9999;
 }
 
-.top-nav a {
+.blog {
+  background-color: black;
+}
+
+.top-nav nav {
   font-family: "sabbath-black",serif;
-  font-weight: 600;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+  font-size: 2.5rem;
+  transition: 0.08s;
+  background-color: white;
 }

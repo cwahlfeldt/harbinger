@@ -2,6 +2,7 @@ import gulp from "gulp";
 import cp from "child_process";
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
+import cssvariables from 'postcss-css-variables';
 import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
@@ -30,6 +31,7 @@ gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe(postcss([
       cssImport({from: "./src/css/main.css"}),
+      cssvariables(), 
       cssnext(),
       cssnano(),
     ]))
